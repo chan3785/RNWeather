@@ -82,7 +82,7 @@ export default function App() {
                 <Text style={styles.temp}>
                   {parseFloat(day.main.temp).toFixed(1)}
                 </Text>
-                <View style={{ alignItems: "center" }}>
+                <View style={{ alignItems: "center" }} key={index}>
                   <Fontisto
                     name={icons[day.weather[0].main]}
                     size={40}
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   cityName: {
-    fontSize: 48,
+    fontSize: 70,
     fontWeight: "500",
   },
   weather: {},
